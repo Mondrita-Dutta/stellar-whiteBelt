@@ -1,2 +1,0 @@
-# stellar-whiteBelt
-white belt

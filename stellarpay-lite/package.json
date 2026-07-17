@@ -1,0 +1,23 @@
+{
+  "name": "stellarpay-lite",
+  "version": "1.0.0",
+  "description": "Beginner-friendly Stellar Testnet dApp for the Rise In Stellar Journey to Mastery White Belt Level 1 challenge",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "python -m http.server 3000"
+  },
+  "dependencies": {
+    "@stellar/freighter-api": "^3.0.0",
+    "@stellar/stellar-sdk": "^13.0.0"
+  },
+  "keywords": [
+    "stellar",
+    "blockchain",
+    "web3",
+    "testnet",
+    "vanilla-javascript"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
