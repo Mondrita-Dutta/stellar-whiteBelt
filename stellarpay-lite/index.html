@@ -157,8 +157,9 @@
       </p>
     </footer>
 
-    <script src="./node_modules/@stellar/freighter-api/build/index.min.js"></script>
-    <script src="./node_modules/@stellar/stellar-sdk/dist/stellar-sdk.min.js"></script>
+    <!-- Use unpkg CDN instead of local node_modules for Vercel deployment -->
+    <script src="https://unpkg.com/@stellar/freighter-api@3.0.0/build/index.min.js"></script>
+    <script src="https://unpkg.com/@stellar/stellar-sdk@13.0.0/dist/stellar-sdk.min.js"></script>
     <script type="module" src="./js/app.js"></script>
   </body>
 </html>
