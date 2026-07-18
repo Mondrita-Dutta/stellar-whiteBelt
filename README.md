@@ -78,14 +78,17 @@ stellarpay-lite/
 
 ## Screenshots
 
-*(Add your screenshots here)*
 
 - **Dashboard View**:<img width="1209" height="605" alt="image" src="https://github.com/user-attachments/assets/821ec9a2-a1ec-40ff-a9a4-e4d8b3cbcff5" />
 
 `
-- **Transaction Success**: <img width="1209" height="605" alt="image" src="https://github.com/user-attachments/assets/a953f1e6-8db6-43d0-8b9c-a2d34994086a" />
+- **Transaction Success**: <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/bceb2947-36e2-4bcd-9061-f2a3ebd8927a" />
 
-- **Mobile Responsive Layout**: `![Mobile View](path/to/mobile.png)`
+
+- **Mobile Responsive Layout**: <img width="738" height="1600" alt="WhatsApp Image 2026-07-19 at 00 46 40 (1)" src="https://github.com/user-attachments/assets/94504b26-f4a5-4727-a0ca-69fa6056b526" />
+<img width="738" height="1600" alt="WhatsApp Image 2026-07-19 at 00 46 40" src="https://github.com/user-attachments/assets/317bc790-6851-4bde-88e8-1b89da9b8283" />
+
+
 
 ## Future Improvements
 
