@@ -80,8 +80,11 @@ stellarpay-lite/
 
 *(Add your screenshots here)*
 
-- **Dashboard View**: `![Dashboard](path/to/screenshot.png)`
-- **Transaction Success**: `![Success Toast](path/to/toast.png)`
+- **Dashboard View**:<img width="1209" height="605" alt="image" src="https://github.com/user-attachments/assets/821ec9a2-a1ec-40ff-a9a4-e4d8b3cbcff5" />
+
+`
+- **Transaction Success**: <img width="1209" height="605" alt="image" src="https://github.com/user-attachments/assets/a953f1e6-8db6-43d0-8b9c-a2d34994086a" />
+
 - **Mobile Responsive Layout**: `![Mobile View](path/to/mobile.png)`
 
 ## Future Improvements
