@@ -9,6 +9,9 @@
     />
     <title>StellarPay Lite</title>
     <link rel="icon" href="./assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -71,7 +74,7 @@
             <span class="address-label">Wallet Address</span>
             <div class="address-row">
               <code id="wallet-address">Not connected</code>
-              <button class="icon-btn" type="button">Copy</button>
+              <button class="icon-btn" type="button" aria-label="Copy Wallet Address" title="Copy Address">Copy</button>
             </div>
           </div>
 
@@ -87,7 +90,7 @@
             <button class="link-btn" type="button">Refresh</button>
           </div>
 
-          <div class="balance-amount">24.880 <span>XLM</span></div>
+          <div class="balance-amount" id="balance-display" aria-live="polite">0.000 <span>XLM</span></div>
           <p class="card-note">
             Live Testnet balance snapshot for your demo wallet.
           </p>
@@ -101,18 +104,20 @@
             </div>
           </div>
 
-          <form class="payment-form">
+          <form class="payment-form" id="payment-form">
             <label class="field">
               <span>Recipient Address</span>
-              <input type="text" placeholder="GABC..." />
+              <input type="text" id="recipient-address" placeholder="GABC..." />
+              <div id="recipient-error" class="error-text" style="display: none; font-size: 0.8em; margin-top: 4px;"></div>
             </label>
 
             <label class="field">
               <span>Amount</span>
-              <input type="number" step="0.01" min="0" placeholder="0.00" />
+              <input type="number" id="send-amount" step="0.01" min="0" placeholder="0.00" />
+              <div id="amount-error" class="error-text" style="display: none; font-size: 0.8em; margin-top: 4px;"></div>
             </label>
 
-            <button class="btn btn-primary btn-full" type="button">
+            <button id="send-btn" class="btn btn-primary btn-full" type="button" disabled>
               Send XLM
             </button>
           </form>
@@ -126,16 +131,19 @@
             </div>
           </div>
 
-          <div class="transaction-status">
-            <span class="status-dot"></span>
-            <p>Ready to submit your next transfer</p>
+          <div class="transaction-status" id="tx-status-container" aria-live="polite">
+            <span class="status-dot" id="tx-status-dot"></span>
+            <p id="tx-status-text">Ready to submit your next transfer</p>
           </div>
 
           <div class="address-box compact">
-            <span class="address-label">Transaction Hash</span>
+            <span class="address-label">
+              Transaction Hash
+              <span id="tx-timestamp" style="float: right; font-size: 0.8em; color: #7f8db5;"></span>
+            </span>
             <div class="address-row">
-              <code>tx_4f8ad7...9312</code>
-              <button class="icon-btn" type="button">Copy</button>
+              <code id="tx-hash-code">None</code>
+              <button id="copy-tx-btn" class="icon-btn" type="button" aria-label="Copy Transaction Hash" title="Copy Hash">Copy</button>
             </div>
           </div>
         </article>
@@ -150,6 +158,7 @@
     </footer>
 
     <script src="./node_modules/@stellar/freighter-api/build/index.min.js"></script>
+    <script src="./node_modules/@stellar/stellar-sdk/dist/stellar-sdk.min.js"></script>
     <script type="module" src="./js/app.js"></script>
   </body>
 </html>
