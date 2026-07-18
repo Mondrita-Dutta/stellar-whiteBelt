@@ -88,8 +88,6 @@ stellarpay-lite/
 - **Mobile Responsive Layout**: <img width="738" height="1600" alt="WhatsApp Image 2026-07-19 at 00 46 40 (1)" src="https://github.com/user-attachments/assets/94504b26-f4a5-4727-a0ca-69fa6056b526" />
 <img width="738" height="1600" alt="WhatsApp Image 2026-07-19 at 00 46 40" src="https://github.com/user-attachments/assets/317bc790-6851-4bde-88e8-1b89da9b8283" />
 
-
-
 ## Future Improvements
 
 - **Transaction History**: Fetch and display a localized list of the user's past transactions using Horizon's `/payments` endpoint.
@@ -97,6 +95,3 @@ stellarpay-lite/
 - **Address Book**: Allow users to save frequently used public keys with aliases.
 - **Dark/Light Mode Toggle**: Implement a theme switcher to respect system preferences.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute this code as a learning resource or foundation for your own Stellar dApps.
