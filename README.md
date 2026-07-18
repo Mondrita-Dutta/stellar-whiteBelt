@@ -77,6 +77,7 @@ stellarpay-lite/
 - **`@stellar/stellar-sdk`**: Used to communicate with the Horizon Testnet server, check balances, and build/submit XDR transactions.
 
 ## Screenshots
+<img width="1353" height="684" alt="image" src="https://github.com/user-attachments/assets/53dde431-94ce-47f8-8208-82a06171bc90" />
 
 
 - **Dashboard View**:<img width="1209" height="605" alt="image" src="https://github.com/user-attachments/assets/821ec9a2-a1ec-40ff-a9a4-e4d8b3cbcff5" />
